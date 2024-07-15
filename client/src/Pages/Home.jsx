@@ -7,15 +7,18 @@ const Home = () => {
   const navigate =useNavigate()
   const redirect1 = () =>navigate('/form')
   const redirect2 = () =>navigate('/form2')
-  const style ={}
+  
 
   return(
-    <div className="h-screen overflow-hidden">    
+    <div className="h-screen overflow-hidden">  
      <video src={video} autoPlay loop muted className=' relative object-cover w-full h-full '  />
-     <button onClick={redirect1} className=" top-[80%] gap-4 left-[64%] block absolute   bg-gradient-to-r from-purple-400 via-sky-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-emerald-200 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center animate-shimmer bg-[length:200%_200%] ">
-       Exams
+     <div className="marquee top-2 bg-opacity-20 bg-white text-white py-2 w-full mb-4">
+        <span className=" text-lg font-bold">Discover Your Path to Success with Personalized Career Guidance at CareerCompass - Your Ultimate Destination for Informed Career Decisions and Future Planning!</span>
+      </div>
+     <button onClick={redirect1} className=" light2 top-[80%] gap-4 left-[60%] block absolute text-white  rounded-lg text-2xl font-medium px-10 py-2.5 text-center   ">
+       Jobs
      </button>  
-     <button onClick={redirect2} className=" mr-4 gap-4 top-[80%] left-[28%] block absolute  bg-gradient-to-r from-purple-400 via-sky-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-emerald-200 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center animate-shimmer bg-[length:200%_200%] ">
+     <button onClick={redirect2} className=" light2 mr-4 gap-4 top-[80%] left-[24%] block absolute  text-white rounded-lg text-2xl font-medium px-8 py-2.5 text-center ">
        Courses
      </button>  
     </div>

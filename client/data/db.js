@@ -2,7 +2,7 @@ export const examdata=[
     {
         id:1,
         ename:"TNPSC Group 1",
-        minedu:"UG degree in any recognized University",
+        minedu:"SSLC",
         minage:21,
         posts:["1. (Deputy Collector)","2. (District Superintendent of Police(DSP)","3. (Assistant Commissioner)"," 4.(District Registrar)","5.(District Employment Officer)","6.District Officer (Fire andRescue Service)"],
         physique:[" For Men: Must be not less than 165 cms in Height andnot less than 86 cms round the chest on full inspiration and must have a chest expansion of not less than 5 cms on full inspiration"," For Women: Must be not less than 155 cms in Height. The Chest measurement will not apply to them. "    ],
@@ -30,7 +30,7 @@ export const examdata=[
     {
         id:3,
         ename:"TNPSC Group 1B",
-        minedu:"UG degree in any recognized University",
+        minedu:"[UG degree in any recognized University]",
         minage:21,
         posts:"ASSISTANT COMMISSIONER",
         physique:[" For Men: Must be not less than 165 cms in Height andnot less than 86 cms round the chest on full inspiration and must have a chest expansion of not less than 5 cms on full inspiration"," For Women: Must be not less than 155 cms in Height. The Chest measurement will not apply to them. "    ],
@@ -43,7 +43,7 @@ export const examdata=[
     {
         id:4,
         ename:"TNPSC Group 2",
-        minedu:"UG degree in any recognized University",
+        minedu:"[UG degree in any recognized University]",
         minage:18,
         minages:["Allposts: 18 ","Probobation Officer :22"],
         posts:["1. Tamil Nadu Industries Subordinate Service"," 2. Tamil Nadu Defence Subordinate Service"," 3. Tamil Nadu General Subordinate Service"," 4. Tamil Nadu Jail Subordinate Service"," 5. Tamil Nadu Labor Subordinate Service"," 6. Tamil Nadu Registration Subordinate Service","7. Tamil Nadu Ministerial Service"," 8. Tamil Nadu Municipal Commissioner Subordinate service"," 9. Tamil Nadu Secretariat Service"," 10. Tamil Nadu Secretariat Service"," 11. Tamil Nadu secretariat service"," 12. Tamil Nadu State Legislative Assembly Secretariat Service"," 13. Tamil Nadu Secretariat Service"," 14. Tamil Nadu State Legislative Assembly Secretariat Service"," 15. Tamil Nadu Secretariat Service"," 16. Tamil Nadu Industries Subordinate Service"," 17. Tamil Nadu Ministerial Service"," 18. Tamil Nadu Local Fund Audit Subordinate Service"," 19. Tamil Nadu Handlooms and Textiles subordinate service"," 20. Tamil Nadu Co-operative Subordinate Service"," 21. Tamil Nadu Co-operative Subordinate Service"," 22. Tamil Nadu Agricultural Marketing Subordinate Service"," 23. Tamil Nadu Ministerial Service"," 24. Tamil Nadu General Subordinate Service"," 25. Tamil Nadu Town Panchayat Subordinate Service"],
@@ -57,7 +57,7 @@ export const examdata=[
     {
         id:5,
         ename:"TNPSC Group 2A",
-        minedu:"UG degree in any recognized University",
+        minedu:"[UG degree in any recognized University]",
         minage:18,
         posts:["1. Personal clerk"," 2. Steno Typist"," 3. Lower divison clerk"," 4. Assistant in various Department"],
         physique:"Not Applicable",
@@ -70,7 +70,7 @@ export const examdata=[
     {
         id:6,
         ename:"TNPSC Group 4",
-        minedu:"UG degree in any recognized University",
+        minedu:"[UG degree in any recognized University]",
         minage:18,
         posts:['1.Village Administrative Officer',' 2. Junior Assistant',' 3. Junior excutive',' 4. Bill Operator',' 5. Forest Guard',' 6. Forest watcher',' 7. Typist',' 8. Personal Assistant',' 9. Private Secretary'],
         physique:"Not Applicable",
@@ -84,7 +84,7 @@ export const examdata=[
     {
         id:7,
         ename:"Civil Services Examination UPSC (GROUP -A)",
-        minedu:"UG degree in any recognized University",
+        minedu:"[UG degree in any recognized University]",
         minage:21,
         posts:['1. Indian Administrative Serivce','Indian Foreign Service (IFS)',
        ' 2. Indian Audit and Accounts Service (IAAS)',
@@ -112,7 +112,7 @@ export const examdata=[
     {
         id:8,
         ename:"Civil Services Examination UPSC (GROUP -B)",
-        minedu:"UG degree in any recognized University",
+        minedu:"[UG degree in any recognized University]",
         minage:21,
         posts:['1. Armed Forces Headquarters Civil Service',
         ' 2. DANICS',
@@ -129,7 +129,7 @@ export const examdata=[
     {
         id:9,
         ename:"Engineering Services Examination (UPSC-ESE)",
-        minedu:"B.E,B.Tech,M.sc in Enginnering Categories",
+        minedu:"[B.E,B.Tech,M.sc in Enginnering Categories]",
         minage:21,
         posts:[' 1. CATEGORY CIVIL ENGINEERING: (i) Central Engineering Service  (ii) Central Engineering Service (Roads), Group-A (Civil Engineering Posts).(iii) Survey of India Group `A`  Service.(iv) *AEE(Civil) in Border Road Engineering Service.(v) Indian Defence Service of Engineers.(vi) AEE(QS&C) in MES Surveyor Cadre.(vii) Central Water Engineering (Group`A`) Service',  '  2.  CATEGORY MECHANICAL ENGINEERING: (i) AEE in GSI Engineering Service Gr ‘A’.(ii) Indian Defence Service of Engineers.(iii) Indian Naval Armament Service (Mechanical Engineering Posts).(iv) Indian Naval Material Management Service (Mechanical Engineering Posts)(v) Central Water Engineering (Group ‘A’) Service.(vi) Defence Aeronautical Quality Assurance Services/SSO-II (Mechanical).(vii) Central Electrical and Mechanical Engineering Service (Mechanical Engg.)(viii) Central Power Engineering Service Gr ‘A’ (Mechanical Engineering Posts).(ix) *AEE (Electrical and Mechanical) in Border Roads Engineering Service (Mechanical Engineering Posts)(x) Assistant Development Officer (Engineering).(xi) Central Power Engineering Service Gr ‘B’ (Mechanical Engineering Posts) ','  3.  CATEGORY ELECTRICAL ENGINEERING: Group-A/B Services/Posts (i) Central Electrical & Mechanical Engineering Service (Electrical Engineering Posts).(ii) Indian Defence Service of Engineers.(iii) Indian Naval Material Management Service (Electrical Engineering Posts)(iv) Central Power Engineering Service Gr ‘A’ (Electrical Engineering Posts).(v) Indian Naval Armament Service (Electrical Engineering Posts)(vi) Defence Aeronautical Quality Assurance Service/SSO-II (Electrical).(vii) Assistant Development Officer (Engineering).(viii) Central Power Engineering Service Gr ‘B’ (Electrical Engineering Posts).','  4. CATEGORY ELECTRONICS AND TELECOMMUNICATION ENGINEERING: (i) Indian Telecommunication Service Gr ‘A’.(ii) Indian Naval Armament Service (Electronics and Telecom Engineering Posts).(iii) Indian Naval Material Management Service (Electronics and Telecom Engineering Posts)(iv) Defence Aeronautical Quality Assurance Service/SSO-II (Electronics & Tele).(v) Central Power Engineering Gr ‘A’ (Electronics & Telecommunication Engineering Posts).(vi) Assistant Development Officer (Engineering).(vii) Central Power Engineering Gr ‘B’ (Electronics & Telecommunication Engineering Posts).(viii) Junior Telecom Officer Gr ‘B’.'],
         physique:"Not Applicable",
@@ -142,7 +142,7 @@ export const examdata=[
     {
         id:10,
         ename:"Combined Defence Services Examination (CDSE) - Indian Military Academy",
-        minedu:"UG degree in any recognized University",
+        minedu:"[UG degree in any recognized University]",
         minage:19,
         posts:[' 1. Seppoy',' 2. Lance Naik',' 3. Nail',' 4. Havaldar',' 5. Naib subedar',' 6. subedar',' 7. Subedar Major',' 8. Lieutant',' 9. Captain',' 10. Major',' 11. Lieutenant colonel',' 12. Brigadier',' 13. Major General',' 14.Lieutenant General'],
         physique:" Must refer notification on that time",
@@ -155,7 +155,7 @@ export const examdata=[
     {
         id:11,
         ename:"Combined Defence Services Examination (CDSE) - Officers Training Academy",
-        minedu:"UG degree in any recognized University",
+        minedu:"[UG degree in any recognized University]",
         minage:19,
         posts:[' 1. Lieutenant to Major',' 2. Lieutenant Colonel General',' 3. Lieutenant General HAG',' 4. VCO/Cdr/Lt Gen(NFSG))',' 5. COAS',' 6. Lieutenant',' 7. Captain','  8. Major',' 9. Lieutenant Colonel'],
         physique:"must refer Notification on that time",
@@ -168,7 +168,7 @@ export const examdata=[
     {
         id:12,
         ename:"Combined Defence Services Examination (CDSE) - Indian Naval Academy",
-        minedu:"Engineering Degree in any field",
+        minedu:"[Engineering Degree in any field]",
         minage:19,
         posts:[' 1. Admiral',' 2. Captain',' 3. Commander',' 4. Commodore',' 5. DGAFMS',' 6. Lieutenant',' 7. Lieutenant Commander',' 8. Rear Admiral',' 9. Sub Lieutenant',' 10. VCNS/C-IN-C',' 11. Vice-Admiral',' 12. Apprentice',' 13. Artificer V',' 14. Artificer  IV',' 15. Art III _I,',' 16. MCPO I ,II'," 17. Chief",' 18. Seaman I and II'," 19. Leading Seaman",' 20. petty officer',' 21. Chief Petty Officer'],
         physique:"refer notification ",
@@ -181,7 +181,7 @@ export const examdata=[
     {
         id:13,
         ename:"Combined Defence Services Examination (CDSE) -- Indian Air Force Academy",
-        minedu:"UG degree in any recognized University",
+        minedu:"[UG degree in any recognized University]",
         minage:19,
         posts:[' 1. FLYING OFFICER, ',' 2. FLIGHT LIEUTENANT, ',' 3. SQUADRON LEADER, ',' 4. WING COMMANDER, ',' 5. GROUP CAPTAIN, ',' 6. AIR COMMODORE',' 7. AIR VICE MARSHAL',' 8. AIR MARSHAL HAG SCAL',' 9. AIR MARSHAL APEX SCALE',' 10. AIR CHIEF MARSHALL'],
         physique:"refer notification",
@@ -207,7 +207,7 @@ export const examdata=[
     {
         id:15,
         ename:"IBPS Exam (IBPS PO/MT AND CRP Clerks) ",
-        minedu:'UG degree from any recognized Univeristy',
+        minedu:'[UG degree from any recognized Univeristy]',
         minage:20,
         posts:[' 1. Probabationary Officer',' 2. Management Trainees','Clerks'],
         physique:"Not Applicable",
@@ -220,7 +220,7 @@ export const examdata=[
     {
         id:16,
         ename:"SBI Exam (SBI PO & Clerk) ",
-        minedu:[' 1. UG degree from any recognized Univeristy',' 2. Final year UG degree ',' 3. Integrated Dual Degree (IDD)',' 4. Chartered Accountant(CA)'],
+        minedu:[' 1. [UG degree from any recognized Univeristy]',' 2. Final year UG degree ',' 3. Integrated Dual Degree (IDD)',' 4. Chartered Accountant(CA)'],
         minage:21,
         posts:[' 1. Probabationary Officer',' 2. Management Trainees',' 3. Clerks'],
         physique:"Not Applicable",
@@ -233,7 +233,7 @@ export const examdata=[
     {
         id:17,
         ename:"SBI Exam (SBI SO) ",
-        minedu:[' 1. UG degree from any recognized Univeristy',' 2. Final year UG degree ',' 3. Integrated Dual Degree (IDD)',' 4. Chartered Accountant(CA)'],
+        minedu:[' 1. [UG degree from any recognized Univeristy]',' 2. Final year UG degree ',' 3. Integrated Dual Degree (IDD)',' 4. Chartered Accountant(CA)'],
         minage:30,
         posts:[' 1. Special Management Executive', ' 2. Deputy General Manager - law,contractual',' 3. Deputy General Manager - Law',' 4. Deputy Manager - Law'],
         physique:"Not Applicable",
@@ -246,7 +246,7 @@ export const examdata=[
     {
         id:18,
         ename:"NABARD (National Bank for Agriculture and Rural Development) - GRADE A ",
-        minedu:['UG degree from any recognized Univeristy'],
+        minedu:['[UG degree from any recognized Univeristy]'],
         minage:21,
         posts:[' 1. Officer Grade - A(Assistant Manager)',' 2. Manager-General'],
         physique:"Not Applicable",

@@ -1,11 +1,10 @@
 import { useContext,useState } from 'react'
 import { Agecontext } from '../App'
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button, Dialog, DialogTitle, DialogContent, DialogActions, SliderValueLabel } from '@mui/material';
 import { examdata } from '../../data/db'
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { light } from '@mui/material/styles/createPalette';
-import { ShimmerText } from 'shimmer-effects-react';
+
 const Filterdetails = () => {
   const style ={
     color:"gray"
@@ -19,8 +18,16 @@ const Filterdetails = () => {
 
     const{data} = useContext(Agecontext)
     console.log(data)
+
     const username = data.name
-    const filtered = examdata.filter(i => i.minage <= parseInt(data.age) );
+
+
+
+ 
+
+    const filtered =  examdata.filter(i => i.minage <= parseInt(data.age) && i.minedu.includes(data.education) );
+
+
     const [expandedRow, setExpandedRow] = useState(null);
     const excludedrow =['id'];
     const handleRowClick = (rowId) => {
@@ -59,7 +66,7 @@ const Filterdetails = () => {
   return ( 
   <div className="filter">
   
-      <p> welcome {username} !!</p>
+      <p> welcome 🤩 <span className='font-xl font-serif text-purple-500 '>{username} 🤩 !!</span></p>
     
     <TableContainer component={Paper}>
       <Table  className="min-w-full divide-y divide-gray-200">
@@ -73,7 +80,7 @@ const Filterdetails = () => {
         </TableHead>
         <TableBody >
           {filtered.map((b,index) => (
-            <React.Fragment key={b.id} >
+            <React.Fragment key={b.id}  >
                 <TableRow className={`cursor-pointer ${index % 2 === 0 ? 'bg-emerald-300' : 'bg-emerald-200'} mb-1 text-pink-500 hover:bg-pink-100`} onClick={() => handleRowClick(b.id)}>
               <TableCell  style={style} className="px-6 py-3 text-pink-500 whitespace-nowrap">{b.id}</TableCell>
               <TableCell  style={style} className="px-6 py-3 text-pink-500 whitespace-nowrap">{b.ename}</TableCell>

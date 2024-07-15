@@ -1,3 +1,97 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.light2{
+  background: -moz-linear-gradient(-45deg,  #c20bf0f1 0%, #c20bf0f1 40%, #ffffff 50%, #c20bf0f1 60%, #c20bf0f1 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#c20bf0f1), color-stop(40%,#c20bf0f1), color-stop(50%,#ffffff), color-stop(60%,#c20bf0f1), color-stop(100%,#c20bf0f1));
+  background: -webkit-linear-gradient(-45deg,  #5c75e6f1 0%,#c20bf0f1 40%,#ffffff 50%,#c20bf0f1 60%,#c20bf0f1 100%);
+  background: -o-linear-gradient(-45deg,  #c20bf0f1 0%,#c20bf0f1 40%,#ffffff 50%,#c20bf0f1 60%,#c20bf0f1 100%);
+  background: -ms-linear-gradient(-45deg,  #c20bf0f1 0%,#c20bf0f1 40%,#ffffff 50%,#c20bf0f1 60%,#c20bf0f1 100%);
+  background: linear-gradient(135deg,  #c20bf0f1 0%,#c20bf0f1 40%,#ffffff 50%,#c20bf0f1 60%,#c20bf0f1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1136dff1', endColorstr='#ff6e00',GradientType=1 );
+  background-repeat: no-repeat;  
+  background-position:0px;
+  background-size:300%;  
+  }
+  
+  .light2:hover{
+    animation:light 2s;
+      -webkit-animation:light 2s;
+    
+  }
+  
+  @keyframes light2 {
+    0% {
+          background-position:-600px; 
+    }
+    100% { 
+          background-position:0px; 
+    }
+  }
+          
+  @-webkit-keyframes light2 {
+    0% {
+          background-position:-600px; 
+    }
+    100% { 
+          background-position:0px; 
+    }
+  }
+  
+.light{
+    background: -moz-linear-gradient(-45deg,  #05aa0df1 0%, #05aa0df1 40%, #ffffff 50%, #05aa0df1 60%, #05aa0df1 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#05aa0df1), color-stop(40%,#05aa0df1), color-stop(50%,#ffffff), color-stop(60%,#05aa0df1), color-stop(100%,#05aa0df1));
+    background: -webkit-linear-gradient(-45deg,  #05aa0df1 0%,#05aa0df1 40%,#ffffff 50%,#05aa0df1 60%,#05aa0df1 100%);
+    background: -o-linear-gradient(-45deg,  #05aa0df1 0%,#05aa0df1 40%,#ffffff 50%,#05aa0df1 60%,#05aa0df1 100%);
+    background: -ms-linear-gradient(-45deg,  #05aa0df1 0%,#05aa0df1 40%,#ffffff 50%,#05aa0df1 60%,#05aa0df1 100%);
+    background: linear-gradient(135deg,  #05aa0df1 0%,#05aa0df1 40%,#ffffff 50%,#05aa0df1 60%,#05aa0df1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05aa0df1', endColorstr='#ff6e00',GradientType=1 );
+    background-repeat: no-repeat;  
+    background-position:0px;
+    background-size:300%;  
+    }
+    
+    .light:hover{
+      animation:light 2s;
+        -webkit-animation:light 2s;
+      
+    }
+    
+    @keyframes light {
+      0% {
+            background-position:-600px; 
+      }
+      100% { 
+            background-position:0px; 
+      }
+    }
+            
+    @-webkit-keyframes light {
+      0% {
+            background-position:-600px; 
+      }
+      100% { 
+            background-position:0px; 
+      }
+    }
+    
+    .bounce:hover{
+      animation:bounce 1s;
+        -webkit-animation:bounce 1s;}
+.marquee {
+          overflow: hidden;
+          position: absolute;
+          white-space: nowrap;
+          box-sizing: border-box;
+        }
+.marquee span {
+          display: inline-block;
+          padding-right: 100%;
+          animation: marquee 40s linear infinite;
+        }
+         @keyframes marquee {
+          0% { transform: translateX(100%); }
+          100% { transform: translateX(-100%); }
+        }
+        
+    

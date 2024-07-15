@@ -32,6 +32,7 @@ const Userform = () => {
       setSex('');
       setAge('');
       setEducation('');
+
       navigate('/filter')
 
       
@@ -180,6 +181,7 @@ const Userform = () => {
                             value={education}
                             onChange={(e)=>setEducation(e.target.value)}
                             id='education'
+                            
                             className="
                             w-full
                             rounded
@@ -197,7 +199,7 @@ const Userform = () => {
                             >
                               <option value=" ">Select</option>
                               <option value="SSLC">SSLC</option>
-                              <option value="UG degree in any recognized University">B.A</option>
+                              <option value="Engineering">B.A</option>
                               <option value="UG degree in any recognized University">B.Sc</option>
                               <option value="UG degree in any recognized University">B.COM</option>
                               <option value="UG degree in any recognized University">BCA</option>
