@@ -203,7 +203,7 @@ const Userform = () => {
                               <option value="UG degree in any recognized University">B.Sc</option>
                               <option value="UG degree in any recognized University">B.COM</option>
                               <option value="UG degree in any recognized University">BCA</option>
-                              <option value="UG degree in any recognized University">B.E</option>
+                              <option value="UG degree in  Engineering">B.E</option>
                               <option value="UG degree in any recognized University">B.TECH</option>
                               <option value="UG degree in any recognized University">OTHER UG COURSES</option>
                               <option value="UG degree in any recognized University">SSLC</option>

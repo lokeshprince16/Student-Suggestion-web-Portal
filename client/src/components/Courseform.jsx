@@ -3,7 +3,7 @@ import {useState,useContext, useEffect} from 'react'
 import { Coursecontext } from '../App'
 
 export default function Courseform() {
-      const colors = ['text-white', 'text-pink-500', 'text-cyan-400', 'text-gray-100'];
+      const colors = ['text-white', 'text-pink-500', 'text-cyan-500', 'text-gray-100'];
       const bgcolors =['bg-green-400', 'bg-pink-400','bg-cyan-400','bg-violet-400']
       const [colorIndex, setColorIndex] = useState(0);
       const [bgcol, setbgcol] = useState(0)
@@ -46,7 +46,7 @@ export default function Courseform() {
             <video src={Bgvideo} loop autoPlay muted />
             </div>
                  
-               <form  onSubmit={handleSubmit} className='bg-white bg-opacity-40 px-4 py-4 rounded-lg form absolute top-[18%] left-[36%]  '> 
+               <form  onSubmit={handleSubmit} className='bg-white w-[30%] bg-opacity-40 px-4 py-4 rounded-lg form absolute top-[18%] left-[36%]  '> 
                   <div className="mb-6">
                     <label className={`text-emerald-500 text-2xl  ${colors[colorIndex]}`}>Name</label>
                      <input
@@ -117,7 +117,7 @@ export default function Courseform() {
                         "
                         >
                          <option value=' '>Select</option>
-                         <option value='18' >18</option>
+                         <option value='18' >1</option>
                          <option value='19' >19</option>
                          <option value='20' >20</option>
                          <option value='21' >21</option>
@@ -149,9 +149,10 @@ export default function Courseform() {
                         >
                           <option value=" ">Select</option>
                           <option value="SSLC">SSLC</option>
-                          <option value="UG degree in any recognized University">B.A</option>
-                          <option value="UG degree in any recognized University">B.Sc</option>
-                          <option value="UG degree in any recognized University">B.COM</option>
+                          <option value="UG degree in any recognized University">Phy,Chem,Bio,Mat</option>
+                          <option value="UG degree in any recognized University">Phy,Chem,C.Sc,Mat</option>
+                          <option value="SSLC">Acc,Comm,Eco,C.Sc</option>
+                          <option value="UG degree in any recognized University">Acc,Comm,Eco,B.M</option>
                     
                         </select>
                   </div>
