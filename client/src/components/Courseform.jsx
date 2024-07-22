@@ -1,24 +1,25 @@
 import Bgvideo from '../Images/Bgvideo CC.mp4'
 import {useState,useContext, useEffect} from 'react'
 import { Coursecontext } from '../App'
+import { useNavigate } from 'react-router-dom';
 
 export default function Courseform() {
-      const colors = ['text-white', 'text-pink-500', 'text-cyan-500', 'text-gray-100'];
-      const bgcolors =['bg-green-400', 'bg-pink-400','bg-cyan-400','bg-violet-400']
+      const colors = ['text-green-400', 'text-pink-500', 'text-sky-400', 'text-white'];
+      const bgcolors =['bg-green-400', 'bg-pink-400','bg-cyan-600','bg-violet-500']
       const [colorIndex, setColorIndex] = useState(0);
       const [bgcol, setbgcol] = useState(0)
     
       useEffect(() => {
         const interval = setInterval(() => {
           setColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
-        }, 4500); 
+        }, 4400); 
     
         return () => clearInterval(interval); 
       }, []);
       useEffect(() => {
          const interval2 = setInterval(() => {
            setbgcol((prevIndex) => (prevIndex + 1) % bgcolors.length);
-         }, 4500); 
+         }, 4400); 
      
          return () => clearInterval(interval2); 
        }, []);
@@ -28,7 +29,10 @@ export default function Courseform() {
    const [stusex, setStusex] = useState('')
    const [stuage, setStuage] = useState('');
    const [stream_of_study, setStream_of_study] = useState('');
+
    console.log(stuname,stusex,stuage,stream_of_study)
+
+   const navigate = useNavigate()
 
 
    const handleSubmit = async(e) => {
@@ -38,6 +42,7 @@ export default function Courseform() {
     setStusex('');
     setStuage('');
     setStream_of_study('');
+    navigate('/filter2')
    }
 
   return (
@@ -46,9 +51,9 @@ export default function Courseform() {
             <video src={Bgvideo} loop autoPlay muted />
             </div>
                  
-               <form  onSubmit={handleSubmit} className='bg-white w-[30%] bg-opacity-40 px-4 py-4 rounded-lg form absolute top-[18%] left-[36%]  '> 
+               <form  onSubmit={handleSubmit} className='bg-gray-400 w-[30%] bg-opacity-40 px-4 py-4 rounded-lg form absolute top-[10%] left-[36%]  '> 
                   <div className="mb-6">
-                    <label className={`text-emerald-500 text-2xl  ${colors[colorIndex]}`}>Name</label>
+                    <label className={`text-emerald-500 font-serif text-2xl font-semibold  ${colors[colorIndex]}`}>Name</label>
                      <input
                         type="text"
                         placeholder="Your Name..."
@@ -59,7 +64,7 @@ export default function Courseform() {
                         rounded
                         py-3
                         px-[14px]
-                       
+                        
                         text-green-500 text-base
                         border border-emerald-500 
                         outline-none
@@ -69,7 +74,7 @@ export default function Courseform() {
                         />
                   </div>
                   <div className="mb-6">
-                    <label  className={`text-emerald-500 text-2xl  ${colors[colorIndex]}`}>Gender</label>
+                    <label  className={`text-emerald-500 font-semibold font-serif text-2xl  ${colors[colorIndex]}`}>Gender</label>
                      <select
                         type="string"
                         placeholder="Enter Your Sex"
@@ -96,7 +101,7 @@ export default function Courseform() {
                         </select>
                   </div>
                   <div className="mb-6">
-                    <label className={`text-emerald-500 text-2xl  ${colors[colorIndex]}`}>Age</label>
+                    <label className={`text-emerald-500 font-semibold font-serif text-2xl  ${colors[colorIndex]}`}>Age</label>
                      <select
                         type="number"
                         placeholder="How old are U"
@@ -125,7 +130,7 @@ export default function Courseform() {
                         </select>
                   </div>
                   <div className="mb-6">
-                    <label className={`text-emerald-500 font-semibold text-2xl  ${colors[colorIndex]}`}>Educational Qualification</label>
+                    <label className={`text-emerald-500 font-serif font-semibold text-2xl  ${colors[colorIndex]}`}>Educational Qualification</label>
                      <select
                         rows="6"
                         placeholder="Highest Education qualification ..."
@@ -149,10 +154,10 @@ export default function Courseform() {
                         >
                           <option value=" ">Select</option>
                           <option value="SSLC">SSLC</option>
-                          <option value="UG degree in any recognized University">Phy,Chem,Bio,Mat</option>
-                          <option value="UG degree in any recognized University">Phy,Chem,C.Sc,Mat</option>
-                          <option value="SSLC">Acc,Comm,Eco,C.Sc</option>
-                          <option value="UG degree in any recognized University">Acc,Comm,Eco,B.M</option>
+                          <option value="Physics,Chemistry,Mathematics,Biology">Phy,Chem,Mat,Bio</option>
+                          <option value="Physics,Chemistry,Mathematics,ComputerScience">Phy,Chem,Mat,C.Sc</option>
+                          <option value="Accountancy,Commerce,Economics,ComputerScience">Acc,Comm,Eco,C.Sc</option>
+                          <option value="Accountancy,Commerce,Economics,BusinessMathematics">Acc,Comm,Eco,B.M</option>
                     
                         </select>
                   </div>
@@ -172,7 +177,7 @@ export default function Courseform() {
                         hover:bg-opacity-75
                         `}
                         >
-                       Search  Opportunities🧐
+                       Search Courses 🧐
                      </button>
                   </div>
                </form>

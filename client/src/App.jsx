@@ -5,9 +5,9 @@ import Register from './Pages/Register'
 import Login from './Pages/Login'
 import Userform from './components/Userform'
 import Filterdetails from './components/Filterdetails'
-import Table from './components/Table'
 import Courseform from './components/Courseform'
 import Welcome from './Pages/Welcome'
+import Coursefilter from './components/Coursefilter'
 
 export const Agecontext = createContext();
 export const Coursecontext = createContext();
@@ -42,8 +42,8 @@ const [data1, setdata1] = useState({
               <Route path='/home' element={<Home />}/>
               <Route path='/form' element={<Userform/>}/>
               <Route path='/filter' element={<Filterdetails/>}/>
-              <Route path='/table' element={<Table/>}/>
               <Route path='/form2' element={<Courseform/>}/>
+              <Route path='/filter2' element={<Coursefilter/>}/>
             </Routes>
           </BrowserRouter>
         </Coursecontext.Provider> 

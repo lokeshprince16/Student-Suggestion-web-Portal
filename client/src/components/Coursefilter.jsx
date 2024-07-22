@@ -1,7 +1,127 @@
-import React from 'react'
+// Coursefilter.js
+import React, { useContext, useState } from 'react';
+import { Coursecontext } from '../App';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import ReactPaginate from 'react-paginate';
+import { coursedata } from '../../data/data';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import bgvideo from '../Images/Contact.png'
+import { Link } from 'react-router-dom';
+import file from '../public/BE.Civil.pdf'
 
-export default function Coursefilter() {
+const Coursefilter = () => {
+  const style = { color: "blue" };
+  const styles = { color: "white" };
+
+  const { data1 } = useContext(Coursecontext);
+  const username = data1.stuname;
+  const filtered = coursedata.filter(i => i.eligible.includes(data1.stream_of_study));
+
+  const [expandedrows, setExpandedrows] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 10;
+
+  const handleRowClick = (rowId) => {
+    if (expandedrows === rowId) {
+      setExpandedrows(null);
+    } else {
+      setExpandedrows(rowId);
+    }
+  };
+
+  const renderRowDetails = (b) => {
+    return (
+      <TableRow>
+        <TableCell colSpan={Object.keys(b).length + 1}>
+          <div className="p-2 grid grid-cols-2 gap-4 divide-y-2 overflow-hidden">
+            {Object.keys(b).map((key) => (
+              <React.Fragment key={key} >
+
+                  <span className="font-[poppins] text-gray-800 w-8  bg-transparent text-md uppercase">
+                    {key}:
+                  </span>
+                  <span className='rounded text-cyan-800 overflow-x-auto text-md w-full bg-tansparent font-[playfair Display]'>
+                    {b[key]}
+                  </span>
+               
+             
+              </React.Fragment>
+            ))}
+          </div>
+        </TableCell>
+      </TableRow>
+    );
+  };
+
+  const handlePageClick = ({ selected }) => {
+    setCurrentPage(selected);
+  };
+
+  const offset = currentPage * itemsPerPage;
+  const currentPageData = filtered.slice(offset, offset + itemsPerPage);
+  const pageCount = Math.ceil(filtered.length / itemsPerPage);
+
   return (
-    <div className='coursefilter'></div>
-  )
-}
+    <div>
+      <div className='h-screen overflow-hidden relative'>
+            <img src={bgvideo} loop autoPlay muted />
+        </div>
+    <div className='coursefilter overflow-hidden absolute top-0 w-full ' >
+      <p className='text-white text-xl '>Welcome 🤩 <span className='font-xl font-serif text-cyan-400'>{username} 🤩 !!</span></p>
+      <TableContainer component={Paper}  >
+        <Table className="min-w-full divide-y divide-gray-200">
+          <TableHead>
+            <TableRow className='text-white'>
+              {/* <TableCell style={styles} className="px-6 py-3  bg-stone-800 text-left text-xs font-medium uppercase tracking-wider">ID</TableCell> */}
+              <TableCell style={styles} className="px-6 py-3  bg-stone-800 text-justify text-xs font-semibold uppercase tracking-wider">Course</TableCell>
+              <TableCell style={styles} className="px-6 py-3  bg-stone-800 text-justify text-xs font-semibold uppercase tracking-wider">Syllabus</TableCell>
+
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {currentPageData.map((b, index) => (
+              <React.Fragment key={b.id}>
+                <TableRow className={`cursor-pointer ${index % 2 === 0 ? 'bg-gray-300' : 'bg-gray-200'}  mb-1 text-violet-500  visited:bg-pink-200 hover:bg-violet-200`} onClick={() => handleRowClick(b.id)}>
+                  {/* <TableCell style={style} className="px-6 py-3  whitespace-nowrap">{b.id}</TableCell> */}
+                  <TableCell style={style} className="px-6 py-3  whitespace-nowrap">{b.coursename}</TableCell>
+                  <TableCell style={style} className="px-6 py-3  whitespace-nowrap">
+                  <a
+                    href={`/${b.link}`}
+                    download
+                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-300"
+                    >
+                    Download PDF
+                  </a>
+                  </TableCell>
+                 
+                </TableRow>
+                {expandedrows === b.id && renderRowDetails(b)}
+              </React.Fragment>
+            ))}
+          </TableBody>
+        </Table>
+        <ReactPaginate
+          previousLabel={'previous'}
+          nextLabel={'next'}
+          breakLabel={'...'}
+          breakClassName={'break-me'}
+          pageCount={pageCount}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={5}
+          onPageChange={handlePageClick}
+          containerClassName={'pagination'}
+          activeClassName={'active'}
+          
+        />
+      </TableContainer>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sevillana&display=swap" rel="stylesheet"></link>
+    </div>
+    </div>
+  );
+};
+
+export default Coursefilter;
