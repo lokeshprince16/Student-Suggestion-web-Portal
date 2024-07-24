@@ -21,6 +21,11 @@ const Coursefilter = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const itemsPerPage = 10;
 
+  const handleTextToSpeech = (text) => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(utterance);
+  };
+
   const handleRowClick = (rowId) => {
     if (expandedrows === rowId) {
       setExpandedrows(null);
@@ -30,6 +35,7 @@ const Coursefilter = () => {
   };
 
   const renderRowDetails = (b) => {
+    const details = Object.keys(b).map(key => `${key}: ${b[key]}`).join(', ');
     return (
       <TableRow>
         <TableCell colSpan={Object.keys(b).length + 1}>
@@ -47,6 +53,16 @@ const Coursefilter = () => {
              
               </React.Fragment>
             ))}
+             <div className="col-span-2 flex justify-center p-2">
+              <button
+                onClick={() => handleTextToSpeech(details)}
+                variant="contained"
+                color="primary"
+                className="px-4 py-2 bg-pink-400 text-white rounded hover:bg-pink-600 transition-colors duration-300"
+              >
+               Info Audio
+              </button>
+            </div>
           </div>
         </TableCell>
       </TableRow>

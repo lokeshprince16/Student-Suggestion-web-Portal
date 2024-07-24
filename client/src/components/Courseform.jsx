@@ -4,8 +4,8 @@ import { Coursecontext } from '../App'
 import { useNavigate } from 'react-router-dom';
 
 export default function Courseform() {
-      const colors = ['text-green-400', 'text-pink-500', 'text-sky-400', 'text-white'];
-      const bgcolors =['bg-green-400', 'bg-pink-400','bg-cyan-600','bg-violet-500']
+      const colors = ['text-white', 'text-pink-200', 'text-cyan-200', 'text-violet-200'];
+      const bgcolors =['bg-green-400', 'bg-pink-400','bg-cyan-400','bg-violet-500']
       const [colorIndex, setColorIndex] = useState(0);
       const [bgcol, setbgcol] = useState(0)
     
@@ -59,18 +59,17 @@ export default function Courseform() {
                         placeholder="Your Name..."
                         value={stuname}
                         onChange={(e)=>setStuname(e.target.value)}
-                        className="
-                        w-full
-                        rounded
-                        py-3
-                        px-[14px]
-                        
-                        text-green-500 text-base
-                        border border-emerald-500 
-                        outline-none
-                        focus-visible:shadow-none
-                        focus:bg-opacity-90
-                        "
+                        className={` w-full
+                          rounded
+                          py-3
+                          bg-gray-500
+                          bg-opacity-40
+                          px-[14px]
+                          ${colors[colorIndex]} text-base
+                          border border-emerald-500
+                          outline-none
+                          focus-visible:shadow-none
+                          focus:border-emerald-500`}
                         />
                   </div>
                   <div className="mb-6">
@@ -81,18 +80,17 @@ export default function Courseform() {
                         value={stusex}
                         onChange={(e)=>setStusex(e.target.value)}
                         
-                        className="
-                        w-full
-                        rounded
-                        py-3
-                       
-                        px-[14px]
-                        text-green-500 text-base
-                        border border-emerald-500
-                        outline-none
-                        focus-visible:shadow-none
-                        focus:border-emerald-500
-                        "
+                        className={` w-full
+                          rounded
+                          py-3
+                          bg-gray-500
+                          bg-opacity-40
+                          px-[14px]
+                          ${colors[colorIndex]} text-base
+                          border border-emerald-500
+                          outline-none
+                          focus-visible:shadow-none
+                          focus:border-emerald-500`}
                         >
                        <option value=" ">Select</option>
                        <option value="Male">Male</option>
@@ -108,18 +106,19 @@ export default function Courseform() {
                         id='age'
                         value={stuage}
                         onChange={(e)=>setStuage(e.target.value)}
-                        className="
-                        w-full
+                        className=
+                       {` w-full
                         rounded
                         py-3
-                        
+                        bg-gray-500
+                        bg-opacity-40
                         px-[14px]
-                        text-green-500 text-base
+                        ${colors[colorIndex]} text-base
                         border border-emerald-500
                         outline-none
                         focus-visible:shadow-none
-                        focus:border-emerald-500
-                        "
+                        focus:border-emerald-500`}
+                        
                         >
                          <option value=' '>Select</option>
                          <option value='18' >1</option>
@@ -137,20 +136,17 @@ export default function Courseform() {
                         value={stream_of_study}
                         onChange={(e)=>setStream_of_study(e.target.value)}
                         id='education'
-                        className="
-                        w-full
-                        rounded
-                        
-                        py-3
-                        px-[14px]
-                       
-                        text-green-500 
-                        border border-emerald-500
-                        resize-none
-                        outline-none
-                        focus-visible:shadow-none
-                        focus:border-emerald-500
-                        "
+                        className={` w-full
+                          rounded
+                          py-3
+                          bg-gray-500
+                          bg-opacity-40
+                          px-[14px]
+                          ${colors[colorIndex]} text-base
+                          border border-emerald-500
+                          outline-none
+                          focus-visible:shadow-none
+                          focus:border-emerald-500`}
                         >
                           <option value=" ">Select</option>
                           <option value="SSLC">SSLC</option>
