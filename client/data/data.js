@@ -2,7 +2,7 @@ export const coursedata=[
     {
         id:"1",
         coursename:"B.E civil Engineering",
-        eligible: ['Physics,Chemistry,Mathematics,Biology','Physics,Chemistry,Mathematics,ComputerScience'],
+        eligible: "Physics,Chemistry,Mathematics,Biology /n Physics,Chemistry,Mathematics,ComputerScience",
         duration:'4years',
         link:"../src/public/BE.Civil.pdf"
     },

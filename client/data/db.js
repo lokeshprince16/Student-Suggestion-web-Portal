@@ -5,7 +5,7 @@ export const examdata=[
         minedu:"SSLC",
         minage:21,
         posts:["1. (Deputy Collector)","2. (District Superintendent of Police(DSP)","3. (Assistant Commissioner)"," 4.(District Registrar)","5.(District Employment Officer)","6.District Officer (Fire andRescue Service)"],
-        physique:[" For Men: Must be not less than 165 cms in Height andnot less than 86 cms round the chest on full inspiration and must have a chest expansion of not less than 5 cms on full inspiration"," For Women: Must be not less than 155 cms in Height. The Chest measurement will not apply to them. "    ],
+        physique:[" For Men: Must be not less than 165 cms  in Height andnot less than 86 cms round /n the chest on full inspiration and must have a chest expansion of not less than 5 cms on full inspiration"," For Women: Must be not less than 155 cms in Height. The Chest measurement will not apply to them. "    ],
         selectionprocess:["1.Prelims","2.Mains","3.Direct Interview","4.Physical test"],
         ExamFee:[" 1. OTR(One Time Registration) fee-150 "," 2. Prelims fee - Rs.100", "  3. Mains fee - Rs.200", " 4.*Concession will be given to scheduled cast "],
         approxsalary:"15600 - 39100 + Incentive",
@@ -17,7 +17,7 @@ export const examdata=[
     {
         id:2,
         ename:"TNPSC Group 1A",
-        minedu:"UG degree in forestry,botany,zoology,chemistry,mathematics,statistics,geography,agriculture,horticulture,AgriEnginnering,Civil Engineering,Chemical Engineering, Computer Science, Electrical Enginnering,Electronics,Mechanical Engineering  in any recognized University",
+        minedu:"UG degree in forestry, /n botany,zoology,chemistry,mathematics,statistics,geography,agriculture,horticulture,AgriEnginnering,Civil Engineering,Chemical Engineering, Computer Science, Electrical Enginnering,Electronics,Mechanical Engineering  in any recognized University",
         minage:21,
         posts:"ASSISTANT CONSERVATOR OF FORESTS",
         physique:[" For Men: Must be not less than 165 cms in Height andnot less than 86 cms round the chest on full inspiration and must have a chest expansion of not less than 5 cms on full inspiration"," For Women: Must be not less than 155 cms in Height. The Chest measurement will not apply to them. "    ],

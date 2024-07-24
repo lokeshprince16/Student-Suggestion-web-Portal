@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import bgvideo from '../Images/Contact.png'
 import { Link } from 'react-router-dom';
 import file from '../public/BE.Civil.pdf'
+import { fetchLlamaResponse } from '../AI/Llama';
 
 const Coursefilter = () => {
   const style = { color: "blue" };
@@ -19,7 +20,11 @@ const Coursefilter = () => {
 
   const [expandedrows, setExpandedrows] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
+
+
+  
   const itemsPerPage = 10;
+  
 
   const handleTextToSpeech = (text) => {
     const utterance = new SpeechSynthesisUtterance(text);
@@ -46,7 +51,7 @@ const Coursefilter = () => {
                   <span className="font-[poppins] text-gray-800 w-8  bg-transparent text-md uppercase">
                     {key}:
                   </span>
-                  <span className='rounded text-cyan-800 overflow-x-auto text-md w-full bg-tansparent font-[playfair Display]'>
+                  <span className='rounded break-words text-wrap text-cyan-800 overflow-x-auto text-md w-full bg-tansparent font-[playfair Display]'>
                     {b[key]}
                   </span>
                
@@ -83,6 +88,7 @@ const Coursefilter = () => {
             <img src={bgvideo} loop autoPlay muted />
         </div>
     <div className='coursefilter overflow-hidden absolute top-0 w-full ' >
+      
       <p className='text-white text-xl '>Welcome 🤩 <span className='font-xl font-serif text-cyan-400'>{username} 🤩 !!</span></p>
       <TableContainer component={Paper}  >
         <Table className="min-w-full divide-y divide-gray-200">
