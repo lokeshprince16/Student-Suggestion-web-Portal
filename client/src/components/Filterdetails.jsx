@@ -22,7 +22,10 @@ const Filterdetails = () => {
     const username = data.name
 
 
-
+    const handleTextToSpeech = (text) => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      speechSynthesis.speak(utterance);
+    };
  
 
     const filtered =  examdata.filter(i => i.minage <= parseInt(data.age) && i.minedu.includes(data.education) );
@@ -39,25 +42,36 @@ const Filterdetails = () => {
       
     };
     const renderRowDetails = (b) => {
+      const details = Object.keys(b).map(key => `${key}: ${b[key]}`).join(', ');
       return (
-     
+      <div>
         <TableRow>
           <TableCell colSpan={Object.keys(b).length + 1}>
-            <div className="p-2 grid grid-cols-2 gap-4 divide-y-2 overflow-x-auto">
+            <div className="p-2 grid grid-cols-2 gap-4  overflow-x-auto">
             {Object.keys(b).map((key) => (
               <React.Fragment key={key} >
                 <span className="   font-[poppins] text-md uppercase  ] " >
                   {key}:
                 </span> 
-                <span className='rounded text-pink-500 font-[playfai Display] ' >
+                <span className='rounded w-full text-pink-500 font-[playfai Display] ' >
                   {b[key]}
                 </span>
                 </React.Fragment>
             ))}
+            <div>
+              <Button
+                onClick={() => handleTextToSpeech(details)}
+                variant="contained"
+                color="primary"
+                className="px-4 py-2 bg-pink-400 text-white rounded hover:bg-pink-600 transition-colors duration-300"
+              >
+               Info Audio
+              </Button>
+            </div>
             </div>
           </TableCell>
         </TableRow>
-       
+        </div> 
       );
     };
 

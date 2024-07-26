@@ -6,9 +6,8 @@ import ReactPaginate from 'react-paginate';
 import { coursedata } from '../../data/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import bgvideo from '../Images/Contact.png'
-import { Link } from 'react-router-dom';
-import file from '../public/BE.Civil.pdf'
-import { fetchLlamaResponse } from '../AI/Llama';
+
+
 
 const Coursefilter = () => {
   const style = { color: "blue" };
@@ -95,8 +94,7 @@ const Coursefilter = () => {
           <TableHead>
             <TableRow className='text-white'>
               {/* <TableCell style={styles} className="px-6 py-3  bg-stone-800 text-left text-xs font-medium uppercase tracking-wider">ID</TableCell> */}
-              <TableCell style={styles} className="px-6 py-3  bg-stone-800 text-justify text-xs font-semibold uppercase tracking-wider">Course</TableCell>
-              <TableCell style={styles} className="px-6 py-3  bg-stone-800 text-justify text-xs font-semibold uppercase tracking-wider">Syllabus</TableCell>
+              <TableCell style={styles} className="px-6 py-3  bg-stone-800 text-left ml-8 text-xs font-semibold uppercase tracking-wider">Course</TableCell>
 
             </TableRow>
           </TableHead>
@@ -104,18 +102,7 @@ const Coursefilter = () => {
             {currentPageData.map((b, index) => (
               <React.Fragment key={b.id}>
                 <TableRow className={`cursor-pointer ${index % 2 === 0 ? 'bg-gray-300' : 'bg-gray-200'}  mb-1 text-violet-500  visited:bg-pink-200 hover:bg-violet-200`} onClick={() => handleRowClick(b.id)}>
-                  {/* <TableCell style={style} className="px-6 py-3  whitespace-nowrap">{b.id}</TableCell> */}
-                  <TableCell style={style} className="px-6 py-3  whitespace-nowrap">{b.coursename}</TableCell>
-                  <TableCell style={style} className="px-6 py-3  whitespace-nowrap">
-                  <a
-                    href={`/${b.link}`}
-                    download
-                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-300"
-                    >
-                    Download PDF
-                  </a>
-                  </TableCell>
-                 
+                  <TableCell style={style} className="px-6 py-3 align items-center  whitespace-nowrap">{b.coursename}</TableCell>
                 </TableRow>
                 {expandedrows === b.id && renderRowDetails(b)}
               </React.Fragment>

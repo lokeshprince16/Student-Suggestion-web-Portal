@@ -34,11 +34,7 @@ const Userform = () => {
       setEducation('');
 
       navigate('/filter')
-
-      
-      
-      
-      
+   
     }
   
    

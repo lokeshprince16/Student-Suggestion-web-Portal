@@ -4,7 +4,7 @@ import { Coursecontext } from '../App'
 import { useNavigate } from 'react-router-dom';
 
 export default function Courseform() {
-      const colors = ['text-white', 'text-pink-200', 'text-cyan-200', 'text-violet-200'];
+      const colors = ['text-white', 'text-pink-400', 'text-cyan-400', 'text-violet-400'];
       const bgcolors =['bg-green-400', 'bg-pink-400','bg-cyan-400','bg-violet-500']
       const [colorIndex, setColorIndex] = useState(0);
       const [bgcol, setbgcol] = useState(0)

@@ -2,7 +2,7 @@ export const examdata=[
     {
         id:1,
         ename:"TNPSC Group 1",
-        minedu:"SSLC",
+        minedu:"SSLC,UG degree in any recognized University,PG",
         minage:21,
         posts:["1. (Deputy Collector)","2. (District Superintendent of Police(DSP)","3. (Assistant Commissioner)"," 4.(District Registrar)","5.(District Employment Officer)","6.District Officer (Fire andRescue Service)"],
         physique:[" For Men: Must be not less than 165 cms  in Height andnot less than 86 cms round /n the chest on full inspiration and must have a chest expansion of not less than 5 cms on full inspiration"," For Women: Must be not less than 155 cms in Height. The Chest measurement will not apply to them. "    ],
@@ -57,7 +57,7 @@ export const examdata=[
     {
         id:5,
         ename:"TNPSC Group 2A",
-        minedu:"[UG degree in any recognized University]",
+        minedu:"UG degree in any recognized University,PG",
         minage:18,
         posts:["1. Personal clerk"," 2. Steno Typist"," 3. Lower divison clerk"," 4. Assistant in various Department"],
         physique:"Not Applicable",
@@ -292,6 +292,19 @@ export const examdata=[
         selectionprocess:[' 1 . Computer Based Test',' 2. Document Verification',' 3. Typewriting Test and Document verification',' 4.Skill Test and Document Verification'],
         ExamFee:'Refer the notification',
         approxsalary:"65,200+ Incentive",
+        link:"https://www.upsc.gov.in/"
+
+    },
+    {
+        id:22,
+        ename:"Railway Recruitment Board (RRB) - GROUP - B ",
+        minedu:[' 1. UG degree in any recognized Univeristy for Union Public Service Commission (UPSC) and Engineering Services Examination',' 2. M.B.B.S degree for the post of Medical Services Examination'],
+        minage: 21,
+        posts:[' Junior Engineers, section officers, Depot material Superindent'],
+        physique:"Not Applicable",
+        selectionprocess:[' 1 . Computer Based Test',' 2. Document Verification',' 3. Typewriting Test and Document verification',' 4.Skill Test and Document Verification'],
+        ExamFee:'Refer the notification',
+        approxsalary:"1,17,300+ Incentive",
         link:"https://www.upsc.gov.in/"
 
     },

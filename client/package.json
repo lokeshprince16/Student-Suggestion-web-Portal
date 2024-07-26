@@ -25,6 +25,7 @@
     "i18next-browser-languagedetector": "^7.2.1",
     "i18next-http-backend": "^2.5.1",
     "jquery": "^3.7.1",
+    "llamaai": "^1.0.4",
     "mui-datatables": "^4.3.0",
     "navigate": "^0.3.6",
     "popper": "^1.0.1",
