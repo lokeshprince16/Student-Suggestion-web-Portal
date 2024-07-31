@@ -194,7 +194,7 @@ export const examdata=[
     {
         id:14,
         ename:"Central Armed Police Force (CAPF) by UPSC",
-        minedu:[' 1. CONSTABLE -10TH STANDARD',' 2. HEAD CONSTABLE(RADIO OPERATOR) - 12TH STANDARD OR HSC OR EQUIALENT I.T.I',' 3. SUB INSPECTOR AND ASSISTANT COMMANDANT - UG DEGREE FROM RECOGNIZED UNIVERSITY',],
+        minedu:"[' 1. CONSTABLE -10TH STANDARD',' 2. HEAD CONSTABLE(RADIO OPERATOR) - 12TH STANDARD OR HSC OR EQUIALENT I.T.I',' 3. SUB INSPECTOR AND ASSISTANT COMMANDANT - UG degree in any recognized University',]",
         minage:18,
         posts:["1. Constable, Head Constable, 2. Head Constable(Fitter) , 3. Sub - Inspector ,  4. Assistant Commandant"],
         physique:"*Must verify the Notification",
@@ -207,7 +207,7 @@ export const examdata=[
     {
         id:15,
         ename:"IBPS Exam (IBPS PO/MT AND CRP Clerks) ",
-        minedu:'[UG degree from any recognized Univeristy]',
+        minedu:"[UG degree in any recognized University]",
         minage:20,
         posts:[' 1. Probabationary Officer',' 2. Management Trainees','Clerks'],
         physique:"Not Applicable",
@@ -220,7 +220,7 @@ export const examdata=[
     {
         id:16,
         ename:"SBI Exam (SBI PO & Clerk) ",
-        minedu:[' 1. [UG degree from any recognized Univeristy]',' 2. Final year UG degree ',' 3. Integrated Dual Degree (IDD)',' 4. Chartered Accountant(CA)'],
+        minedu:"['UG degree in any recognized University',' 2. Final year UG degree ',' 3. Integrated Dual Degree (IDD)',' 4. Chartered Accountant(CA)']",
         minage:21,
         posts:[' 1. Probabationary Officer',' 2. Management Trainees',' 3. Clerks'],
         physique:"Not Applicable",
@@ -233,8 +233,8 @@ export const examdata=[
     {
         id:17,
         ename:"SBI Exam (SBI SO) ",
-        minedu:[' 1. [UG degree from any recognized Univeristy]',' 2. Final year UG degree ',' 3. Integrated Dual Degree (IDD)',' 4. Chartered Accountant(CA)'],
-        minage:30,
+        minedu:"['UG degree in any recognized University',' 2. Final year UG degree ',' 3. Integrated Dual Degree (IDD)',' 4. Chartered Accountant(CA)']",
+        minage:21,
         posts:[' 1. Special Management Executive', ' 2. Deputy General Manager - law,contractual',' 3. Deputy General Manager - Law',' 4. Deputy Manager - Law'],
         physique:"Not Applicable",
         selectionprocess:['1 Main Exam ','2.Direct Interview'],
@@ -246,7 +246,7 @@ export const examdata=[
     {
         id:18,
         ename:"NABARD (National Bank for Agriculture and Rural Development) - GRADE A ",
-        minedu:['[UG degree from any recognized Univeristy]'],
+        minedu:"[UG degree in any recognized University]",
         minage:21,
         posts:[' 1. Officer Grade - A(Assistant Manager)',' 2. Manager-General'],
         physique:"Not Applicable",
@@ -259,7 +259,7 @@ export const examdata=[
     {
         id:19,
         ename:"NABARD (National Bank for Agriculture and Rural Development) - GRADE B ",
-        minedu:['UG degree on Agriculture any recognized Univeristy'],
+        minedu:"[UG degree in any recognized University]",
         minage:21,
         posts:[' 1. Manager- Agriculture'],
         physique:"Not Applicable",
@@ -272,7 +272,7 @@ export const examdata=[
     {
         id:20,
         ename:"Railway Recruitment Board (RRB) - NTPC ",
-        minedu:['UG degree on Agriculture any recognized Univeristy and should have Typing skill for the posts,JUnior Accounts Assistant Cum Typist,Traffic Assistant and Senior time keeper'],
+        minedu:'UG degree in any recognized University and should have Typing skill for the posts,JUnior Accounts Assistant Cum Typist,Traffic Assistant and Senior time keeper',
         minage:18,
         posts:['1.Commercial Apprentice',' 2.Traffic Apprentice',' 3. Enquiry cum Reservation Clerk',' 4. Good guard',' 5. Assistant Station Master', ' 6. Junior Assistant cum typist',' 7. Traffic Assistant',' 8. Senior Time Keeper'],
         physique:"Not Applicable",
@@ -285,7 +285,7 @@ export const examdata=[
     {
         id:21,
         ename:"Railway Recruitment Board (RRB) - GROUP - A ",
-        minedu:[' 1. UG degree in any recognized Univeristy for Union Public Service Commission (UPSC) and Engineering Services Examination',' 2. M.B.B.S degree for the post of Medical Services Examination'],
+        minedu:"UG degree in any recognized University for Union Public Service Commission (UPSC) and Engineering Services Examination ,2. M.B.B.S degree for the post of Medical Services Examination",
         minage: 21,
         posts:[' 1. Civil services Examination  (i). IRTS', ' (ii).IRPS', ' (iii). IRAS' , '(iv).RPS', '2. ENGINEERING SERVICES Examination (i).IRSE, (ii).IRSME, (iii). IRSEE', ' 3. Medical Services Examination (i). Indian Railway Medical service'],
         physique:"Not Applicable",
@@ -298,7 +298,7 @@ export const examdata=[
     {
         id:22,
         ename:"Railway Recruitment Board (RRB) - GROUP - B ",
-        minedu:[' 1. UG degree in any recognized Univeristy for Union Public Service Commission (UPSC) and Engineering Services Examination',' 2. M.B.B.S degree for the post of Medical Services Examination'],
+        minedu:"['UG degree in any recognized University for Union Public Service Commission (UPSC) and Engineering Services Examination',' 2. M.B.B.S degree for the post of Medical Services Examination']",
         minage: 21,
         posts:[' Junior Engineers, section officers, Depot material Superindent'],
         physique:"Not Applicable",
@@ -308,6 +308,211 @@ export const examdata=[
         link:"https://www.upsc.gov.in/"
 
     },
+    {
+        id:23,
+        ename:"Railway Recruitment Board (RRB) - GROUP - C ",
+        minedu:"['SSLC,UG degree in any recognized University,PG ']",
+        minage: 18,
+        posts:['1. Technical (i). Clerks,(ii). Assistant Station Masters,(iii). Degree Holders,(iv). Railway Clerks,(v). Commercial Apprentices,vi. Graphic Apprentices, ','2. Non-Technical, (i). Civil,(ii). Mechanical, Electrical Engineering,(iii). Signal and Telecom Communication '],
+        physique:"Not Applicable",
+        selectionprocess:['1. Technical (i). Written Test (ii). Interview  2.Non-Technical (i). only written test '],
+        ExamFee:'Refer the notification',
+        approxsalary:"29900 - 104400+ Incentive",
+        link:"https://indianrailways.gov.in/"
+    },
+    {
+        id:24,
+        ename:"Railway Recruitment Board (RRB) - GROUP - D ",
+        minedu:"['SSLC,UG degree in any recognized University,PG ']",
+        minage: 18,
+        posts:['1. Track Man, 2. Cabin Man ,3. Lever Man , 4. Points Man , 5. Helper-II , 6. Key Man ,7.  shunter , 8. Welder, 9. Fitter, 10. Porter, 11. Helper-II(Mech), 12. Helper-II(Line and Tech), 13. Grade-D(Engg),14. Gang Man,15. Switch Man '],
+        physique:"Not Applicable",
+        selectionprocess:['1. Written Test '],  
+        ExamFee:'Refer the notification',
+        approxsalary:"18,000+ Incentive",
+        link:"https://indianrailways.gov.in/"
+    },
+    {
+        id:25,
+        ename:"Staff Selection Commission (SSC)-CGL ",
+        minedu:"['UG degree in any recognized University,PG ']",
+        minage: 21,
+        posts:['1.Assistant Audit Officer, 2. Inspector (Examiner)  ,3.Income Tax Inspector (CBDT) , 4. Assistant in Ministry of External Affairs (MEA) , 5. Helper-II , 6.Inspector (Central Excise) ,7. Inspector (Prevent Officer) ,8, Assistant Enforcement Officer,9. Assistant (Central Vigilenc Commission), 10. Assistant In AFHQ,11. Assisatant In Ministry Of Railway,12. Assistant Section Officer,13. Assistant In Intelligence Bureau,14. Sub Inspectors (CBI),15. Assistant (Other Ministries),16. Divisional Account,17. Inspector (Narcotics),18. Sub Inspector In National Investigation Agency,19. Statistical Investigator,20. Inspector (Department Of Post),21. Sub Inspector (Central Bureau Of Investigation),22. Auditor (C&AG), 23. Auditor (CGDA),24. Auditor (CGA),25. Tax Assistant (CBEC),26. Tax Assistant (CBDT),27. Offices under C&AG,28. CGA & others,29. Senior Secretariat Assistant, 30. Compiler - Registrar General of India,31. Assistant Accounts Officer, 32. Senior Fraud Investigation ffice,33. Assistant in Other Ministries'],
+        physique:"Not Applicable",
+        selectionprocess:['1. Computer Based Objective Test-(I), 2. Computer Based Objective Test-(II),3. Descriptive Test,4. Skill Test / Computer Proficiency Test'],  
+        ExamFee:'Refer the notification',
+        approxsalary:"20,200+ Incentive",
+        link:"https://ssc.nic.in/"
+    },
+    {
+        id:26,
+        ename:"Staff Selection Commission (SSC)-CHSL ",
+        minedu:"[' SSLC,UG degree in any recognized University,PG ']",
+        minage: 18,
+        posts:['1. Postal Assistants / Sorting Assistants, 2. Data Entry Operator, 3. Lower Divisional Clerk, 4. Count Clerk '],
+        physique:"Not Applicable",
+        selectionprocess:['1. Computer Based Objective Test, 2. Descriptive Test,3. Skill Test'],  
+        ExamFee:'Refer the notification',
+        approxsalary:"20,200+ Incentive",
+        link:"https://ssc.nic.in/"
+    },
+    {
+        id:27,
+        ename:"Staff Selection Commission (SSC)- Constable GD",
+        minedu:"[' SSLC,UG degree in any recognized University,PG ']",
+        minage: 18,
+        posts:['1. General Duty Constable'],
+        physique:"Not Applicable",
+        selectionprocess:['1. Written Exam , 2. Physical Standard Test ,3. Physical Efficiency Test, 4. Medical Test'],  
+        ExamFee:'Refer the notification',
+        approxsalary:"20,200+ Incentive",
+        link:"https://ssc.nic.in/"
+    },
+    {
+        id:28,
+        ename:"Staff Selection Commission (SSC)-Junior Engineers",
+        minedu:"[' SSLC,UG degree in any recognized University,PG ']",
+        minage: 18,
+        posts:['1. Junior Engineer (Civil),2. Junior Engineer (Mechanical), 3. Junior Engineer (Electrical), 4. Junior Engineer (Electrical And Mechanical), 5. Junior Engineer (Quantity Surveying & Contract)'],
+        physique:"Not Applicable",
+        selectionprocess:['1. Computer Based Objective Test , 2.  Written Exam '],  
+        ExamFee:'Refer the notification',
+        approxsalary:"29,455+ Incentive",
+        link:"https://ssc.nic.in/"
+    },
+    {
+        id:29,
+        ename:"Staff Selection Commission (SSC)-Junior Hindi",
+        minedu:"[' PG degree in Hindi or English ']",
+        minage: 18,
+        posts:['1. Junior Translator,2. Senior Translator, 3. Hindi Pradhyapak,'],
+        physique:"Not Applicable",
+        selectionprocess:['1. Computer Based Objective Test, 2. Descriptive Test, '],  
+        ExamFee:'Refer the notification',
+        approxsalary:"29,455+ Incentive",
+        link:"https://ssc.nic.in/"
+    },
+    {
+        id:30,
+        ename:"Staff Selection Commission (SSC)-SSC Stenographer",
+        minedu:"[' SSLC,UG degree in any recognized University,PG ']",
+        minage: 18,
+        posts:[' Stenographer '],
+        physique:"Not Applicable",
+        selectionprocess:['1. Computer Based Objective Test, 2. (Skill Test / Computer Proficiency Test'],  
+        ExamFee:'Refer the notification',
+        approxsalary:"20,200+ Incentive",
+        link:"https://ssc.nic.in/"
+    },
+    {
+        id:31,
+        ename:"United India Insurance Exam",
+        minedu:"['UG degree in any recognized University,PG ']",
+        minage: 21,
+        posts:[' 1. Administrative Officer - Specialist, 2. Administrative Officer- Generalist, 3. Assistants'],
+        physique:"Not Applicable",
+        selectionprocess:['1. written Test, 2. Interview'],  
+        ExamFee:'Refer the notification',
+        approxsalary:"23,000+ Incentive",
+        link:"https://uiic.co.in/"
+    },
+    {
+        id:32,
+        ename:"National Insurance Company",
+        minedu:"['UG degree in any recognized University,PG ']",
+        minage: 21,
+        posts:[' 1. Agriculture Apprentice, 2. Administrative Officer, 3. Assistant (Class III), 4. Agriculture Apprentice'],
+        physique:"Not Applicable",
+        selectionprocess:[' 1. Interview, 2. Preliminary Exam, 3. Mains Exam, 4. Descriptive test'],  
+        ExamFee:'Refer the notification',
+        approxsalary:"32,795+ Incentive",
+        link:"https://nationalinsurance.nic.co.in/"
+    },
+    {
+        id:33,
+        ename:"New India Assurance Company Limited (NIACL)",
+        minedu:"['UG degree in any recognized University,PG ']",
+        minage: 21,
+        posts:[' 1. Administrative Officer, 2. Assistant'],
+        physique:"Not Applicable",
+        selectionprocess:[' 1. Preliminary Exam, 2. Mains Exam 3. Interview'],  
+        ExamFee:'Refer the notification',
+        approxsalary:"32,795+ Incentive",
+        link:"https://newindia.co.in/"
+    },
+    {
+        id:34,
+        ename:"Oriental Insurance Company Ltd (OICL) Exam",
+        minedu:"['PG degree in commerce or Law ']",
+        minage: 21,
+        posts:[' 1. Accounts, 2. Law, 3. Actuaries, 4. Generalist, 5. Medical Officer, 6. Auto Mobile Engineers'],
+        physique:"Not Applicable",
+        selectionprocess:[' 1. Preliminary Exam, 2. Mains Exam 3. Interview'],  
+        ExamFee:'Refer the notification',
+        approxsalary:"32,795+ Incentive",
+        link:"https://newindia.co.in/"
+    },
+    {
+        id:35,
+        ename:"Life Insurance Corporation (LIC) AAO & LIC ADO Exam",
+        minedu:"['UG degree in any recognized University,PG ']",
+        minage: 21,
+        posts:[' 1. Assistant Administrative Officer, 2. Apprentice Development Officers'],
+        physique:"Not Applicable",
+        selectionprocess:[' 1.For (AAO)-Assistant Administrative Officer (i). Computer Based Objective Test, (ii). Interview, (iii). Medical checkup, (iv). Document Verification , 2. For  ADO  (i). Online Test, (ii). Interview, (iii). Medical Checkup'],  
+        ExamFee:'Refer the notification',
+        approxsalary:"35,000+ Incentive",
+        link:"https://licindia.in/"
+    },
+    {
+        id:36,
+        ename:"TET Paper I",
+        minedu:"[' SSLC ,UG degree in any recognized University,PG ']",
+        minage: 21,
+        Subjects:['(i). Child Development & Pedagogy, (ii). English,(iii). Tamil,(iv). Mathematics, (v). Environmental Studies'],
+        posts:[' 1. Primary Teacher'],
+        physique:"Not Applicable",
+        selectionprocess:[' 1.Written Test, 2. Interview'], 
+        ExamFee:'Refer the notification',
+        approxsalary:"20,200+ Incentive",
+        link:"https://licindia.in/"
+    },
+    {
+        id:37,
+        ename:"TET Paper II",
+        minedu:"[' UG degree in any recognized University,PG ']",
+        minage: 21,
+        Subjects:['(i). Child Development & Pedagogy, (ii). English,(iii). Tamil,(iv). Mathematics & Science, (v). Social Science'],
+        posts:[' 1. Upper Primary Teacher'],
+        physique:"Not Applicable",
+        selectionprocess:[' 1.Written Test, 2. Interview'], 
+        ExamFee:'Refer the notification',
+        approxsalary:"34,800-+ Incentive",
+        link:"https://licindia.in/"
+    },
+    
+    {
+        id:38,
+        ename:"Tamilnadu uniformed services recruitment board",
+        minedu:"[' SSLC ,UG degree in any recognized University,PG ']",
+        minage: 18,
+        posts:[' 1. Police constable 2. Jail Warderener 3. fireman'],
+        physique:"Refer Notification",
+        selectionprocess:[' 1.Written Test, 2. physical Endurance test , 3. Endurance test , 4. Physical Efficiency test, 5.Document Verification'], 
+        ExamFee:'Refer the notification',
+        approxsalary:"18,200 - 57,900+ Incentive",
+        link:"https://tnusrb.tn.gov.in/"
+    },
+    
+    
+    
+    
+    
+    
+
+
+
+
 
 
 

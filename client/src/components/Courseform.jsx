@@ -121,7 +121,7 @@ export default function Courseform() {
                         
                         >
                          <option value=' '>Select</option>
-                         <option value='18' >1</option>
+                         <option value='18' >18</option>
                          <option value='19' >19</option>
                          <option value='20' >20</option>
                          <option value='21' >21</option>

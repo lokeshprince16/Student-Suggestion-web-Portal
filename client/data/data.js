@@ -752,38 +752,95 @@ export const coursedata=[
         duration:' 4 Years',
         opportunities:'1. Physiotherapist in Rehabilitating Patients with Physical Injuries or Disabilities,2. Sports Physiotherapist in Treating and Preventing Sports-Related Injuries,3. Pediatric Physiotherapist in Working with Children to Improve Motor Skills,4. Geriatric Physiotherapist in Managing Age-Related Physical Conditions,5. Clinical Researcher in Physiotherapy Techniques and Innovations'
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-    
-    
-
-
-    
-
-    
-    
-    
-    
-    
-    
-
-
-
-
+    {
+        id:"104",
+        coursename:"B.Sc. (Hons.) Agriculture",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4years', 
+        Opportunities: '1. Agricultural Scientist in Research and Development of Crop Production,2. Agronomist in Improving Soil and Crop Management Practices,3. Agricultural Extension Officer in Educating Farmers and Promoting Sustainable Practices,4. Agribusiness Manager in Managing Agricultural Business Operations,5. Agricultural Consultant in Advising on Farm Management and Agricultural Policies'
+    },
+    {
+        id:"105",
+        coursename:"B.Sc. (Hons.) Horticulture",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4years', 
+        Opportunities: '1. Horticulturist in Managing and Improving Plant Cultivation and Production,2. Landscape Designer in Planning and Designing Gardens and Green Spaces,3. Nursery Manager in Overseeing Plant Propagation and Sales,4. Research Scientist in Horticultural Innovations and Plant Breeding,5. Agricultural Extension Officer in Educating Farmers on Horticultural Practices'
+    },
+    {
+        id:"106",
+        coursename:"B.Sc. (Hons.) Agri Business Management",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4years', 
+        Opportunities: '1. Agribusiness Manager in Overseeing Agricultural Business Operations,2. Supply Chain Analyst in Managing the Agricultural Supply Chain,3. Marketing Specialist in Promoting and Selling Agricultural Products,4. Financial Analyst in Analyzing Agricultural Business Investments,5. Consultant in Agribusiness Strategy and Development'
+    },
+    {
+        id:"107",
+        coursename:"B.Sc. (Hons.) Forestry",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4years', 
+        Opportunities:'1. Forest Officer in Managing and Conserving Forest Resources,2. Wildlife Manager in Protecting and Managing Wildlife Habitats,3. Silviculturist in Cultivating and Managing Forests for Timber and Conservation,4. Forest Researcher in Studying Forest Ecosystems and Biodiversity,5. Environmental Consultant in Advising on Forestry and Land Management Practices'
+    },
+    {
+        id:"108",
+        coursename:"B.Sc. (Hons.) Sericulture",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'3 years', 
+        Opportunities:'1. Sericulturist in Managing Silkworm Breeding and Silk Production,2. Research Scientist in Developing Improved Sericulture Techniques,3. Quality Control Analyst in Ensuring Silk Quality and Standards,4. Extension Officer in Educating Farmers on Sericulture Practices,5. Sericulture Entrepreneur in Starting and Managing Silk Farms and Businesses'
+    },
+    {
+        id:"109",
+        coursename:"B.Sc. (Hons.) Food, Nutrition and Dietetics",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'3 years', 
+        Opportunities:'1. Clinical Dietitian in Hospitals and Healthcare Facilities,2. Nutrition Consultant in Private Practice or Wellness Centers,3. Food Product Developer in the Food Industry,4. Public Health Nutritionist in Community Nutrition Programs,5. Researcher in Food Science and Nutritional Studies'
+    },
+    {
+        id:"110",
+        coursename:"B.Tech. (Agricultural Engineering)",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4 years', 
+        Opportunities:'1. Agricultural Engineer in Designing and Improving Farming Machinery and Equipment,2. Irrigation Engineer in Developing Efficient Water Management Systems,3. Soil and Water Conservation Engineer in Erosion Control and Land Management,4. Post-Harvest Engineer in Developing Storage and Processing Technologies,5. Researcher in Agricultural Technologies and Innovations' 
+    },
+    {
+        id:"111",
+        coursename:"B.Tech. (Energy and Environmental Engineering)",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4 years', 
+        Opportunities:'1. Renewable Energy Engineer in Developing Sustainable Energy Systems,2. Environmental Engineer in Designing Solutions for Pollution Control and Waste Management,3. Energy Analyst in Analyzing Energy Efficiency and Consumption,4. Environmental Consultant in Advising on Environmental Policies and Practices5. Researcher in Energy and Environmental Technologies',  
+    },
+    {
+        id:"112",
+        coursename:"B.Tech. (Food Technology)",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4 years', 
+        Opportunities:'1. Food Technologist in Developing and Improving Food Products,2. Quality Assurance Manager in Ensuring Food Safety and Quality Standards,3. Product Development Specialist in Innovating New Food Items,4. Food Safety Inspector in Monitoring Compliance with Food Regulations,5. Research Scientist in Food Science and Technology Innovations',
+    },
+    {
+        id:"113",
+        coursename:"B.Tech. (Food Technology)",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4 years', 
+        Opportunities:'1. Food Technologist in Developing and Improving Food Products,2. Quality Assurance Manager in Ensuring Food Safety and Quality Standards,3. Product Development Specialist in Innovating New Food Items,4. Food Safety Inspector in Monitoring Compliance with Food Regulations,5. Research Scientist in Food Science and Technology Innovations',
+    },
+    {
+        id:"114",
+        coursename:"B.Tech. (Agricultural Information Technology)",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4 years', 
+        Opportunities:'1. Agricultural IT Specialist in Developing Software and Technology Solutions for Agriculture,2. Precision Agriculture Analyst in Implementing Data-Driven Farming Techniques,3. Agricultural Data Scientist in Analyzing Data for Crop Management and Forecasting,4. IT Consultant in Agribusiness for Digital Transformation and Technology Adoption,5. Researcher in Agricultural Information Systems and Innovations',
+    },
+    {
+        id:"115",
+        coursename:"B.Tech. (Biotechnology)",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4 years', 
+        Opportunities:'1. Biotechnologist in Developing and Applying Biotechnological Solutions in Industries,2. Research Scientist in Biomedical or Agricultural Biotechnology Research,3. Quality Control Analyst in Biotechnology Product Testing and Validation,4. Bioinformatics Specialist in Analyzing Biological Data Using Computational Tools,5. Biotech Product Developer in Creating New Biotech Products and Solutions'
+    }, 
+    {
+        id:"116",
+        coursename:"B.Tech. (Bioinformatics)",
+        eligible: ['Physics,Chemistry,Mathematics,Biology'],
+        duration:'4 years', 
+        Opportunities:'1. Bioinformatics Analyst in Analyzing Biological Data for Research and Clinical Applications,2. Computational Biologist in Developing Algorithms and Models for Biological Data,3. Data Scientist in Genomics and Proteomics Research,4. Bioinformatics Software Developer in Creating Tools for Biological Research,5. Research Scientist in Integrative Bioinformatics Studies and Applications',
+    },        
 ]
