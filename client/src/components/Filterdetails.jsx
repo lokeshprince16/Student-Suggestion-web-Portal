@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Filterdetails = () => {
   const style ={
-    color:"gray"
+    color:"blue"
   }
   const styles ={
     color:"white"
@@ -95,7 +95,7 @@ const Filterdetails = () => {
         <TableBody >
           {filtered.map((b,index) => (
             <React.Fragment key={b.id}  >
-                <TableRow className={`cursor-pointer ${index % 2 === 0 ? 'bg-emerald-300' : 'bg-emerald-200'} mb-1 text-pink-500 hover:bg-pink-100`} onClick={() => handleRowClick(b.id)}>
+                <TableRow className={`cursor-pointer ${index % 2 === 0 ? 'bg-cyan-200' : 'bg-cyan-100'} mb-1 text-pink-500 hover:bg-pink-100`} onClick={() => handleRowClick(b.id)}>
               <TableCell  style={style} className="px-6 py-3 text-pink-500 whitespace-nowrap">{b.id}</TableCell>
               <TableCell  style={style} className="px-6 py-3 text-pink-500 whitespace-nowrap">{b.ename}</TableCell>
               <TableCell  style={style}className="px-6 py-3  text-pink-500 whitespace-nowrap">{b.minage}</TableCell>
